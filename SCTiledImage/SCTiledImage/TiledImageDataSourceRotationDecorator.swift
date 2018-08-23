@@ -4,6 +4,7 @@
 //
 //  Created by Maxime POUWELS on 18/07/2017.
 //
+import UIKit
 
 class TiledImageDataSourceRotationDecorator: SCTiledImageViewDataSource {
     
