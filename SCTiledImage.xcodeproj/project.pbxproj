@@ -12,11 +12,6 @@
 		9C0253041E44889600F3457A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0253021E44889600F3457A /* Main.storyboard */; };
 		9C0253061E44889600F3457A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0253051E44889600F3457A /* Assets.xcassets */; };
 		9C0253091E44889600F3457A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0253071E44889600F3457A /* LaunchScreen.storyboard */; };
-		9C02531F1E448C7000F3457A /* DrawableTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C02531A1E448C7000F3457A /* DrawableTile.swift */; };
-		9C0253201E448C7000F3457A /* TiledImageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C02531B1E448C7000F3457A /* TiledImageContentView.swift */; };
-		9C0253211E448C7000F3457A /* TiledImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C02531C1E448C7000F3457A /* TiledImageDataSource.swift */; };
-		9C0253221E448C7000F3457A /* TiledImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C02531D1E448C7000F3457A /* TiledImageScrollView.swift */; };
-		9C0253231E448C7000F3457A /* TiledImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C02531E1E448C7000F3457A /* TiledImageView.swift */; };
 		9C35AA251E44966A009FF963 /* ExampleTiledImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C35AA241E44966A009FF963 /* ExampleTiledImageDataSource.swift */; };
 		9C3E42631E449A2C0065B297 /* 0-0-0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C3E3EC61E449A1C0065B297 /* 0-0-0.jpg */; };
 		9C3E42641E449A2C0065B297 /* 0-0-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C3E3EC71E449A1C0065B297 /* 0-0-1.jpg */; };
@@ -943,8 +938,13 @@
 		9C3E45FD1E449A2E0065B297 /* 3-4-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C3E42601E449A2C0065B297 /* 3-4-1.jpg */; };
 		9C3E45FE1E449A2E0065B297 /* 3-4-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C3E42611E449A2C0065B297 /* 3-4-2.jpg */; };
 		9C3E45FF1E449A2E0065B297 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C3E42621E449A2C0065B297 /* background.jpg */; };
-		9C52700F1F2076CB006F1F79 /* TiledImageRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C52700D1F2076CB006F1F79 /* TiledImageRotation.swift */; };
-		9C5270101F2076CB006F1F79 /* TiledImageDataSourceRotationDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C52700E1F2076CB006F1F79 /* TiledImageDataSourceRotationDecorator.swift */; };
+		B66B26CA212EB83C00964A3C /* TiledImageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B26C3212EB83B00964A3C /* TiledImageContentView.swift */; };
+		B66B26CB212EB83C00964A3C /* TiledImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B26C4212EB83C00964A3C /* TiledImageScrollView.swift */; };
+		B66B26CC212EB83C00964A3C /* TiledImageDataSourceRotationDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B26C5212EB83C00964A3C /* TiledImageDataSourceRotationDecorator.swift */; };
+		B66B26CD212EB83C00964A3C /* TiledImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B26C6212EB83C00964A3C /* TiledImageView.swift */; };
+		B66B26CE212EB83C00964A3C /* TiledImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B26C7212EB83C00964A3C /* TiledImageDataSource.swift */; };
+		B66B26CF212EB83C00964A3C /* DrawableTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B26C8212EB83C00964A3C /* DrawableTile.swift */; };
+		B66B26D0212EB83C00964A3C /* TiledImageRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B26C9212EB83C00964A3C /* TiledImageRotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -955,11 +955,6 @@
 		9C0253051E44889600F3457A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C0253081E44889600F3457A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C02530A1E44889600F3457A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C02531A1E448C7000F3457A /* DrawableTile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawableTile.swift; path = SCTiledImage/DrawableTile.swift; sourceTree = "<group>"; };
-		9C02531B1E448C7000F3457A /* TiledImageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TiledImageContentView.swift; path = SCTiledImage/TiledImageContentView.swift; sourceTree = "<group>"; };
-		9C02531C1E448C7000F3457A /* TiledImageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TiledImageDataSource.swift; path = SCTiledImage/TiledImageDataSource.swift; sourceTree = "<group>"; };
-		9C02531D1E448C7000F3457A /* TiledImageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TiledImageScrollView.swift; path = SCTiledImage/TiledImageScrollView.swift; sourceTree = "<group>"; };
-		9C02531E1E448C7000F3457A /* TiledImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TiledImageView.swift; path = SCTiledImage/TiledImageView.swift; sourceTree = "<group>"; };
 		9C35AA241E44966A009FF963 /* ExampleTiledImageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTiledImageDataSource.swift; sourceTree = "<group>"; };
 		9C3E3EC61E449A1C0065B297 /* 0-0-0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0-0-0.jpg"; sourceTree = "<group>"; };
 		9C3E3EC71E449A1C0065B297 /* 0-0-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0-0-1.jpg"; sourceTree = "<group>"; };
@@ -1886,8 +1881,13 @@
 		9C3E42601E449A2C0065B297 /* 3-4-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3-4-1.jpg"; sourceTree = "<group>"; };
 		9C3E42611E449A2C0065B297 /* 3-4-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3-4-2.jpg"; sourceTree = "<group>"; };
 		9C3E42621E449A2C0065B297 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
-		9C52700D1F2076CB006F1F79 /* TiledImageRotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TiledImageRotation.swift; path = "../../AproPLAN/aproplan-swift/Pods/SCTiledImage/SCTiledImage/SCTiledImage/TiledImageRotation.swift"; sourceTree = "<group>"; };
-		9C52700E1F2076CB006F1F79 /* TiledImageDataSourceRotationDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TiledImageDataSourceRotationDecorator.swift; path = "../../AproPLAN/aproplan-swift/Pods/SCTiledImage/SCTiledImage/SCTiledImage/TiledImageDataSourceRotationDecorator.swift"; sourceTree = "<group>"; };
+		B66B26C3212EB83B00964A3C /* TiledImageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiledImageContentView.swift; sourceTree = "<group>"; };
+		B66B26C4212EB83C00964A3C /* TiledImageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiledImageScrollView.swift; sourceTree = "<group>"; };
+		B66B26C5212EB83C00964A3C /* TiledImageDataSourceRotationDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiledImageDataSourceRotationDecorator.swift; sourceTree = "<group>"; };
+		B66B26C6212EB83C00964A3C /* TiledImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiledImageView.swift; sourceTree = "<group>"; };
+		B66B26C7212EB83C00964A3C /* TiledImageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiledImageDataSource.swift; sourceTree = "<group>"; };
+		B66B26C8212EB83C00964A3C /* DrawableTile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawableTile.swift; sourceTree = "<group>"; };
+		B66B26C9212EB83C00964A3C /* TiledImageRotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiledImageRotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1936,15 +1936,16 @@
 		9C35AA231E44964B009FF963 /* Tiled Image view */ = {
 			isa = PBXGroup;
 			children = (
-				9C02531D1E448C7000F3457A /* TiledImageScrollView.swift */,
-				9C02531E1E448C7000F3457A /* TiledImageView.swift */,
-				9C02531A1E448C7000F3457A /* DrawableTile.swift */,
-				9C02531B1E448C7000F3457A /* TiledImageContentView.swift */,
-				9C02531C1E448C7000F3457A /* TiledImageDataSource.swift */,
-				9C52700E1F2076CB006F1F79 /* TiledImageDataSourceRotationDecorator.swift */,
-				9C52700D1F2076CB006F1F79 /* TiledImageRotation.swift */,
+				B66B26C8212EB83C00964A3C /* DrawableTile.swift */,
+				B66B26C3212EB83B00964A3C /* TiledImageContentView.swift */,
+				B66B26C7212EB83C00964A3C /* TiledImageDataSource.swift */,
+				B66B26C5212EB83C00964A3C /* TiledImageDataSourceRotationDecorator.swift */,
+				B66B26C9212EB83C00964A3C /* TiledImageRotation.swift */,
+				B66B26C4212EB83C00964A3C /* TiledImageScrollView.swift */,
+				B66B26C6212EB83C00964A3C /* TiledImageView.swift */,
 			);
 			name = "Tiled Image view";
+			path = SCTiledImage;
 			sourceTree = "<group>";
 		};
 		9C3E3EC51E449A1C0065B297 /* HoiAn */ = {
@@ -2911,6 +2912,7 @@
 				TargetAttributes = {
 					9C0252FA1E44889600F3457A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 58B4B52VE3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -3877,15 +3879,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C0253011E44889600F3457A /* ViewController.swift in Sources */,
-				9C0253211E448C7000F3457A /* TiledImageDataSource.swift in Sources */,
-				9C0253201E448C7000F3457A /* TiledImageContentView.swift in Sources */,
+				B66B26CA212EB83C00964A3C /* TiledImageContentView.swift in Sources */,
+				B66B26CB212EB83C00964A3C /* TiledImageScrollView.swift in Sources */,
 				9C0252FF1E44889600F3457A /* AppDelegate.swift in Sources */,
-				9C52700F1F2076CB006F1F79 /* TiledImageRotation.swift in Sources */,
-				9C5270101F2076CB006F1F79 /* TiledImageDataSourceRotationDecorator.swift in Sources */,
-				9C0253221E448C7000F3457A /* TiledImageScrollView.swift in Sources */,
 				9C35AA251E44966A009FF963 /* ExampleTiledImageDataSource.swift in Sources */,
-				9C02531F1E448C7000F3457A /* DrawableTile.swift in Sources */,
-				9C0253231E448C7000F3457A /* TiledImageView.swift in Sources */,
+				B66B26D0212EB83C00964A3C /* TiledImageRotation.swift in Sources */,
+				B66B26CE212EB83C00964A3C /* TiledImageDataSource.swift in Sources */,
+				B66B26CC212EB83C00964A3C /* TiledImageDataSourceRotationDecorator.swift in Sources */,
+				B66B26CF212EB83C00964A3C /* DrawableTile.swift in Sources */,
+				B66B26CD212EB83C00964A3C /* TiledImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4008,6 +4010,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 58B4B52VE3;
 				INFOPLIST_FILE = SCTiledImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siclo.SCTiledImage;
@@ -4020,6 +4023,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 58B4B52VE3;
 				INFOPLIST_FILE = SCTiledImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siclo.SCTiledImage;
