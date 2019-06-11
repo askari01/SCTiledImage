@@ -27,6 +27,10 @@ final class SCTiledImageView: UIView {
     fileprivate var dataSource: SCTiledImageViewDataSource!
     fileprivate let tileCache = NSCache<NSString, SCDrawableTile>()
     
+    // We use these two properties to avoid accessing tiledLayer from bg thread
+    private var tileSize = CGSize.zero
+    private var storedBounds = CGRect.zero
+    
     deinit {
         layer.contents = nil
         layer.delegate = nil
@@ -51,6 +55,9 @@ final class SCTiledImageView: UIView {
         
         let imageSize = dataSource.displayedImageSize
         frame = CGRect(x: 0, y: 0, width: imageSize.width, height: imageSize.height)
+        
+        self.tileSize = tileSize
+        self.storedBounds = bounds
     }
     
     override func draw(_ rect: CGRect) {
@@ -64,9 +71,7 @@ final class SCTiledImageView: UIView {
         let scaleX = context.ctm.a / UIScreen.main.scale
         let scaleY = context.ctm.d / UIScreen.main.scale
         
-        let tiledLayer = layer as! CATiledLayer
-        
-        var tileSize = tiledLayer.tileSize
+        var tileSize = self.tileSize
         tileSize.width = round(tileSize.width/scaleX)
         tileSize.height = round(-tileSize.height/scaleY)
         
@@ -100,7 +105,7 @@ final class SCTiledImageView: UIView {
                     let height = tileSize.height
                     var tileRect = CGRect(x: x, y: y, width: width, height: height)
                     tileRect = rotation.rotate(tileRect, in: imageSize)
-                    tileRect = bounds.intersection(tileRect)
+                    tileRect = storedBounds.intersection(tileRect)
                     
                     let drawableTile = SCDrawableTile(rect: tileRect)
                     let tile = SCTile(level: level, col: colInt, row: rowInt)
@@ -116,7 +121,7 @@ final class SCTiledImageView: UIView {
                 }
                 
                 if let unwrappedMissingImageRect = missingImageRect {
-                    drawLowerResTileIfAvailableAtHigherLevel(ofLevel: level, col: colInt, row: rowInt, tileSize: tiledLayer.tileSize, tileRect: unwrappedMissingImageRect)
+                    drawLowerResTileIfAvailableAtHigherLevel(ofLevel: level, col: colInt, row: rowInt, tileSize: self.tileSize, tileRect: unwrappedMissingImageRect)
                 }
             }
         }
