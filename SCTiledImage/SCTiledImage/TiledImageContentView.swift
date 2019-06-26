@@ -31,6 +31,7 @@ class SCTiledImageContentView: UIView {
     }
     
     func add(_ view: UIView) {
+        view.frame = tiledImageView.bounds
         addSubview(view)
     }
     
