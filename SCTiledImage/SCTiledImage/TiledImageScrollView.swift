@@ -79,15 +79,21 @@ public class SCTiledImageScrollView: UIScrollView {
         }
         addSubview(contentView!)
         
-        currentBounds = bounds.size
-        contentSize = dataSource.displayedImageSize
-        setMaxMinZoomScalesForCurrentBounds()
-        setZoomScale(minimumZoomScale, animated: false)
+        updateBoundAndZoom()
     }
     
     public func add(subview: UIView) {
         contentView?.add(subview)
         addedSubviews.append(subview)
+    }
+    
+    public func updateBoundAndZoom() {
+        guard let dataSource = dataSource else { return }
+        
+        currentBounds = bounds.size
+        contentSize = dataSource.displayedImageSize
+        setMaxMinZoomScalesForCurrentBounds()
+        setZoomScale(minimumZoomScale, animated: false)
     }
     
     fileprivate func setMaxMinZoomScalesForCurrentBounds() {
