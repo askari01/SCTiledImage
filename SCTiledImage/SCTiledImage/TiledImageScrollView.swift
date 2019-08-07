@@ -79,7 +79,7 @@ public class SCTiledImageScrollView: UIScrollView {
         }
         addSubview(contentView!)
         
-        updateBoundAndZoom()
+        updateContentSizeAndZoom()
     }
     
     public func add(subview: UIView) {
@@ -87,7 +87,7 @@ public class SCTiledImageScrollView: UIScrollView {
         addedSubviews.append(subview)
     }
     
-    public func updateBoundAndZoom() {
+    public func updateContentSizeAndZoom() {
         guard let dataSource = dataSource else { return }
         
         currentBounds = bounds.size
