@@ -25,7 +25,7 @@ public protocol SCTiledImageViewDataSource: class {
     var imageSize: CGSize { get }
     var tileSize: CGSize { get }
     var zoomLevels: Int { get }
-    var rotation: SCTiledImageRotation { get }
+    var rotation: SCTiledImageRotation { get set }
     func requestTiles(_ tiles: [SCTile])
     func requestBackgroundImage(completionHandler: @escaping (UIImage?) -> ())
     func getCachedImage(for tile: SCTile) -> UIImage?

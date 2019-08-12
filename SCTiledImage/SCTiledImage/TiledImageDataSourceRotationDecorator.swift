@@ -9,7 +9,7 @@ import UIKit
 class TiledImageDataSourceRotationDecorator: SCTiledImageViewDataSource {
     
     private let tiledImageDataSource: SCTiledImageViewDataSource
-    let rotation: SCTiledImageRotation
+    var rotation: SCTiledImageRotation
     
     weak var delegate: SCTiledImageViewDataSourceDelegate? {
         didSet {

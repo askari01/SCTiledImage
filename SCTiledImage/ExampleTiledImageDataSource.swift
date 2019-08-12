@@ -15,11 +15,13 @@ class ExampleTiledImageDataSource: SCTiledImageViewDataSource {
     let imageSize: CGSize
     let tileSize: CGSize
     let zoomLevels: Int
+    var rotation: SCTiledImageRotation
     
     init(imageSize: CGSize, tileSize: CGSize, zoomLevels: Int) {
         self.imageSize = imageSize
         self.tileSize = tileSize
         self.zoomLevels = zoomLevels
+        rotation = .none
     }
     
     func requestTiles(_ tiles: [SCTile]) {
