@@ -28,7 +28,7 @@ public enum SCTiledImageRotation {
         }
     }
     
-    public var toDegrees: Int {
+    public var degree: Int {
         switch self {
         case .none:
             return 0
