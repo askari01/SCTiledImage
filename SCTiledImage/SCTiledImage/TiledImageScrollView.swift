@@ -22,6 +22,9 @@ public class SCTiledImageScrollView: UIScrollView {
     public private(set) var twoFingersTap: UITapGestureRecognizer!
     private var addedSubviews: [UIView] = []
     
+    // This boolean is used to acutally detact real zoom or scroll made by the user.
+    private var isScrollingOrZoming = false
+    
     fileprivate weak var dataSource: SCTiledImageViewDataSource?
     public weak var tiledImageScrollViewDelegate: SCTiledImageScrollViewDelegate?
     
@@ -184,15 +187,33 @@ extension SCTiledImageScrollView: UIScrollViewDelegate {
         return contentView
     }
     
+    // Zooming
+    
+    public func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
+        isScrollingOrZoming = true
+    }
+    
     public func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
-        
+        isScrollingOrZoming = false
     }
     
     public func scrollViewDidZoom(_ scrollView: UIScrollView) {
+        guard isScrollingOrZoming else { return }
         tiledImageScrollViewDelegate?.tiledImageScrollViewDidScrollOrZoom(self)
     }
     
+    // Scrolling
+    
+    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        isScrollingOrZoming = true
+    }
+    
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        isScrollingOrZoming = false
+    }
+    
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard isScrollingOrZoming else { return }
         tiledImageScrollViewDelegate?.tiledImageScrollViewDidScrollOrZoom(self)
     }
     
