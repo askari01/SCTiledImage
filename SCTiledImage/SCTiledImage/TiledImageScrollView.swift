@@ -153,6 +153,8 @@ public class SCTiledImageScrollView: UIScrollView {
             let maxZoomRect = rect(around: tapCenter, atZoomScale: newScale)
             zoom(to: maxZoomRect, animated: false)
         }
+        
+        tiledImageScrollViewDelegate?.tiledImageScrollViewDidScrollOrZoom(self)
     }
     
     fileprivate func rect(around point: CGPoint, atZoomScale zoomScale: CGFloat) -> CGRect {
@@ -173,6 +175,8 @@ public class SCTiledImageScrollView: UIScrollView {
             newZoomScale = nextZoomScale < minimumZoomScale  ? minimumZoomScale : nextZoomScale
         }
         setZoomScale(newZoomScale, animated: false)
+        
+        tiledImageScrollViewDelegate?.tiledImageScrollViewDidScrollOrZoom(self)
     }
     
     public func getContentView() -> UIView? {
