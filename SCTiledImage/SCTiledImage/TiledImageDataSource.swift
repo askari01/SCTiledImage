@@ -20,7 +20,7 @@ public struct SCTile {
     }
 }
 
-public protocol SCTiledImageViewDataSource: class {
+public protocol SCTiledImageViewDataSource: AnyObject {
     var delegate: SCTiledImageViewDataSourceDelegate? { get set }
     var imageSize: CGSize { get }
     var tileSize: CGSize { get }
@@ -47,6 +47,6 @@ public extension SCTiledImageViewDataSource {
 
 }
 
-public protocol SCTiledImageViewDataSourceDelegate: class {
+public protocol SCTiledImageViewDataSourceDelegate: AnyObject {
     func didRetrieve(tilesWithImage: [(SCTile, UIImage)])
 }

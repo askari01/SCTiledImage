@@ -6,6 +6,8 @@
 //  Copyright © 2017 siclo. All rights reserved.
 //
 
+#if os(iOS)
+
 import UIKit
 
 @UIApplicationMain
@@ -18,3 +20,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
 }
+
+#endif

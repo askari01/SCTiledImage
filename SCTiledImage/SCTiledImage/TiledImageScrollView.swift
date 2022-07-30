@@ -6,9 +6,11 @@
 //  Copyright © 2016 Siclo. All rights reserved.
 //
 
+#if os(iOS)
+
 import UIKit
 
-public protocol SCTiledImageScrollViewDelegate: class {
+public protocol SCTiledImageScrollViewDelegate: AnyObject {
     func tiledImageScrollViewDidScrollOrZoom(_ tiledImageScrollView: SCTiledImageScrollView)
 }
 
@@ -222,3 +224,5 @@ extension SCTiledImageScrollView: UIScrollViewDelegate {
     }
     
 }
+
+#endif

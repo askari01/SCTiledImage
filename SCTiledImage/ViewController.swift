@@ -6,6 +6,8 @@
 //  Copyright © 2017 siclo. All rights reserved.
 //
 
+#if os(iOS)
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -28,3 +30,5 @@ class ViewController: UIViewController {
     }
     
 }
+
+#endif
