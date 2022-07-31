@@ -6,6 +6,8 @@
 //  Copyright © 2016 Siclo. All rights reserved.
 //
 
+#if os(iOS)
+
 import UIKit
 
 final public class NoFadeTiledLayer: CATiledLayer {
@@ -186,3 +188,4 @@ extension SCTiledImageView: SCTiledImageViewDataSourceDelegate {
     
 }
 
+#endif

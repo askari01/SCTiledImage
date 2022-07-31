@@ -6,6 +6,8 @@
 //  Copyright © 2017 siclo. All rights reserved.
 //
 
+#if os(iOS)
+
 import UIKit
 
 class ExampleTiledImageDataSource: SCTiledImageViewDataSource {
@@ -52,3 +54,5 @@ class ExampleTiledImageDataSource: SCTiledImageViewDataSource {
     }
     
 }
+
+#endif

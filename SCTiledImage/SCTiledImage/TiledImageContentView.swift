@@ -6,6 +6,8 @@
 //  Copyright © 2016 Siclo. All rights reserved.
 //
 
+#if os(iOS)
+
 import UIKit
 
 class SCTiledImageContentView: UIView {
@@ -36,3 +38,5 @@ class SCTiledImageContentView: UIView {
     }
     
 }
+
+#endif

@@ -6,6 +6,8 @@
 //  Copyright © 2016 Siclo. All rights reserved.
 //
 
+#if os(iOS)
+
 import UIKit
 
 public struct SCTile {
@@ -50,3 +52,5 @@ public extension SCTiledImageViewDataSource {
 public protocol SCTiledImageViewDataSourceDelegate: AnyObject {
     func didRetrieve(tilesWithImage: [(SCTile, UIImage)])
 }
+
+#endif

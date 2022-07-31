@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupTiledImageScrollView()
     }
-    
+
     private func setupTiledImageScrollView() {
         let imageSize = CGSize(width: 9112, height: 4677)
         let tileSize = CGSize(width: 256, height: 256)

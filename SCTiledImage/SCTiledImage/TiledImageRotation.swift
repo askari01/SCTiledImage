@@ -5,6 +5,8 @@
 //  Created by Maxime POUWELS on 18/07/2017.
 //
 
+#if os(iOS)
+
 import Foundation
 import CoreGraphics
 import UIKit
@@ -149,3 +151,5 @@ infix operator ^^ : PowerPrecedence
 func ^^ (radix: Int, power: Int) -> Int {
     return Int(pow(Double(radix), Double(power)))
 }
+
+#endif

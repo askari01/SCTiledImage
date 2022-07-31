@@ -4,6 +4,9 @@
 //
 //  Created by Maxime POUWELS on 18/07/2017.
 //
+
+#if os(iOS)
+
 import UIKit
 
 class TiledImageDataSourceRotationDecorator: SCTiledImageViewDataSource {
@@ -80,3 +83,5 @@ extension TiledImageDataSourceRotationDecorator: SCTiledImageViewDataSourceDeleg
         }
     }
 }
+
+#endif
