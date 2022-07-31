@@ -20,11 +20,11 @@ let package = Package(
             path: "SCTiledImage",
             exclude: [
                 "Info.plist",
-                "ExampleTiledImageDataSource.swift",
-                "ViewController.swift"
+//                "ExampleTiledImageDataSource.swift",
+//                "ViewController.swift"
             ],
             resources: [
-                .process("SCTiledImage"),
+//                .process("SCTiledImage"),
                 .process("HoiAn")
             ]
         )
