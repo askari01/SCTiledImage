@@ -17,17 +17,15 @@ let package = Package(
         .target(
             name: "SCTiledImage",
             dependencies: [],
-            path: "SCTiledImage",
+            path: "SCTiledImage/SCTiledImage",
             exclude: [
-                "Info.plist",
-                "Base.lproj",
-                "Main.storyboard",
-                "LaunchScreen.storyboard",
-                "ExampleTiledImageDataSource.swift",
-                "ViewController.swift"
+//                "Info.plist",
+//                "AppDelegate",
+//                "ExampleTiledImageDataSource.swift",
+//                "ViewController.swift"
             ],
             resources: [
-                .process("HoiAn")
+//                .process("HoiAn")
             ]
         )
     ],
