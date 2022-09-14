@@ -5,7 +5,7 @@ let package = Package(
     name: "SCTiledImage",
     defaultLocalization: "en",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v15)
     ],
     products: [
         .library(
@@ -17,16 +17,7 @@ let package = Package(
         .target(
             name: "SCTiledImage",
             dependencies: [],
-            path: "SCTiledImage/SCTiledImage",
-            exclude: [
-//                "Info.plist",
-//                "AppDelegate",
-//                "ExampleTiledImageDataSource.swift",
-//                "ViewController.swift"
-            ],
-            resources: [
-//                .process("HoiAn")
-            ]
+            path: "SCTiledImage/SCTiledImage"
         )
     ],
     swiftLanguageVersions: [.v5]
